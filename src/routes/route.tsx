@@ -1,6 +1,15 @@
 import { createBrowserRouter } from "react-router-dom"
 import App from "../App"
 
+import Home from "../pages/Home"
+import For_you from "../pages/For_you";
+import Company from "../pages/Company";
+import Commerce from "../pages/Commerce";
+import Club from "../pages/Club";
+import Shop from "../pages/Shop";
+import Shopping_network from "../pages/Shopping_network";
+import Contact from "../pages/Contact";
+
 
 export const router = createBrowserRouter([
     {
@@ -9,36 +18,35 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <></>
+                element: <Home/>
             },
             {
                 path: '/voce',
-                element: <></>
+                element: <For_you/>
             },
             {
                 path: '/empresa',
-                element: <></>
+                element: <Company/>
             },
             {
                 path: '/comercio',
-                element: <></>
+                element: <Commerce/>
             },
             {
                 path: '/correct_club',
-                element: <></>
+                element: <Club/>
             },
             {
                 path: '/correct_shop',
-                element: <></>
+                element: <Shop/>
             },
             {
                 path: '/rede_de_compras',
-                element: <></>
-
+                element: <Shopping_network/>
             },
             {
                 path: '/contato',
-                element: <></>
+                element: <Contact/>
             },
         ]
     }
